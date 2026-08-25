@@ -1,0 +1,21 @@
+
+<h1 class="titulo">Hola mundo</h1>
+
+
+<!-- <app-mi-componente *ngIf="miBooleano"></app-mi-componente> -->
+
+<!-- <ng-container class="titulo" *ngFor="let item of miArray">
+  <app-mi-componente *ngIf="item == 'valor1'"></app-mi-componente>
+</ng-container> -->
+
+
+@for (item of miArray; track item) {
+ 
+  @if (item == 'valor1') {
+    <app-mi-componente></app-mi-componente>
+  }
+}
+
+
+<!-- {{ miPropiedad() }} -->
+
