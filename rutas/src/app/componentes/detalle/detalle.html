@@ -1,0 +1,10 @@
+<h1>Detalle de item</h1>
+@if (itemEncontrado()) {
+<p>Id: {{itemEncontrado()?.id}}</p>
+<p>Nombre: {{itemEncontrado()?.name}}</p>
+
+} @else if (!itemEncontrado()) {
+
+<p>Item no encontrado</p>
+
+}
