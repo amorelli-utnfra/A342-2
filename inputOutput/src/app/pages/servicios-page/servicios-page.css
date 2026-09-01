@@ -1,0 +1,13 @@
+:host {
+    display: block;
+    min-height: calc(100vh - 76px);
+    background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 50%, #ecfeff 100%);
+    padding: 48px 20px;
+    box-sizing: border-box;
+}
+
+:host > * {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+}

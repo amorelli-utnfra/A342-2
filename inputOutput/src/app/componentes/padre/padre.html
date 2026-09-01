@@ -1,0 +1,13 @@
+<div class="padre">
+
+    <div class="valor-box">
+        <span class="eyebrow">Padre</span>
+        <h3>{{ valor() || 'Sin valor aún' }}</h3>
+    </div>
+
+    <app-hijo [dataSignal]="valor()" (datoDelHijoSignal)="recibirDatoSignal($event)">
+    </app-hijo>
+
+    <app-hijo2 [datoHijo2]="modeloDelHijo()"></app-hijo2>
+
+</div>
