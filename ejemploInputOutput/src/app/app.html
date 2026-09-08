@@ -1,0 +1,10 @@
+<div class="list">
+  @for (usuario of usuarios(); track $index) {
+  <app-card-usuario [usuario]="usuario" (selected)="recibirUsuario($event)"></app-card-usuario>
+  }
+</div>
+
+
+@if (usuarioSeleccionado() !== null) {
+<app-mostrar-usuario [usuario]="usuarioSeleccionado()!"></app-mostrar-usuario>
+}

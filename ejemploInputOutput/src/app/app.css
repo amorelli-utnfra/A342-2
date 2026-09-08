@@ -1,0 +1,40 @@
+:host {
+	--bg-main: radial-gradient(circle at 20% 20%, #fef7e5 0%, #f5f8ff 45%, #eef2ff 100%);
+	--panel-bg: rgba(255, 255, 255, 0.85);
+	--panel-border: rgba(20, 45, 95, 0.12);
+	--text-main: #13233f;
+
+	display: block;
+	min-height: 100vh;
+	padding: 2rem 1rem;
+	box-sizing: border-box;
+	background: var(--bg-main);
+	font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+	color: var(--text-main);
+}
+
+.list {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 1rem;
+	background: var(--panel-bg);
+	border: 1px solid var(--panel-border);
+	backdrop-filter: blur(8px);
+	border-radius: 20px;
+	padding: 1rem;
+	box-shadow: 0 14px 30px rgba(17, 35, 70, 0.08);
+}
+
+app-mostrar-usuario {
+	max-width: 1100px;
+	margin: 1.2rem auto 0;
+	display: block;
+}
+
+@media (max-width: 900px) {
+	:host {
+		padding: 1.2rem 0.8rem;
+	}
+}

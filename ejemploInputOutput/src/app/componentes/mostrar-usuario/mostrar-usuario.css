@@ -1,0 +1,33 @@
+.card-muestra {
+	border-radius: 16px;
+	border: 1px solid rgba(20, 44, 95, 0.15);
+	background: linear-gradient(145deg, #ffffff 0%, #f4f8ff 100%);
+	padding: 1.1rem;
+	box-shadow: 0 10px 20px rgba(21, 36, 69, 0.08);
+}
+
+.card-muestra h1 {
+	margin: 0;
+	color: #12244b;
+	font-size: 1.5rem;
+	padding-bottom: 0.75rem;
+	border-bottom: 2px solid rgba(20, 44, 95, 0.14);
+}
+
+.card-muestra p {
+	margin: 0;
+	padding: 0.68rem 0;
+	border-bottom: 1px solid rgba(17, 37, 80, 0.1);
+	color: #1f2f4f;
+	word-break: break-word;
+}
+
+.card-muestra p:last-child {
+	border-bottom: none;
+}
+
+.card-muestra p:nth-of-type(1) {
+	font-size: 1.12rem;
+	font-weight: 700;
+	color: #12244b;
+}

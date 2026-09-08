@@ -1,0 +1,38 @@
+.card {
+	border-radius: 16px;
+	border: 1px solid rgba(16, 37, 78, 0.14);
+	background: linear-gradient(145deg, #ffffff 0%, #f9fbff 100%);
+	padding: 1rem;
+	min-height: 165px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 0.8rem;
+	transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.card:hover {
+	transform: translateY(-3px);
+	box-shadow: 0 12px 18px rgba(18, 37, 73, 0.12);
+}
+
+.card p {
+	margin: 0;
+	font-size: 1.02rem;
+	color: #0f2347;
+	font-weight: 700;
+}
+
+button {
+	border: none;
+	border-radius: 10px;
+	padding: 0.6rem 0.8rem;
+	font-weight: 700;
+	color: #1f1300;
+	background: linear-gradient(90deg, #ffb049 0%, #ff8f4a 55%, #ff724d 100%);
+	cursor: pointer;
+}
+
+button:hover {
+	filter: brightness(1.05);
+}
