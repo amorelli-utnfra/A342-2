@@ -1,0 +1,66 @@
+.form {
+  font-family: sans-serif;
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #eaeaea;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 2px 2px 7px #000;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form > div {
+  margin: 16px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form .check {
+  display: block;
+  input {
+    margin-left: 6px;
+    width: 18px;
+    aspect-ratio: 1 / 1;
+    vertical-align: middle;
+  }
+}
+
+.form .buttons {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.form .buttons button {
+  padding: 10px 20px;
+}
+
+/* Estilos para estados de controles del formulario */
+input.ng-touched.ng-invalid {
+  border: 1px solid #cf0a0a;
+  &:focus {
+    outline: 1px solid #cf0a0a;
+  }
+}
+
+input.ng-touched.ng-valid {
+  border: 1px solid #73cf0a;
+  &:focus {
+    outline: 1px solid #73cf0a;
+  }
+}
+
+input.ng-pending {
+  border: 1px solid #fc1df8;
+  &:focus {
+    outline: 1px solid #fc1df8;
+  }
+}
