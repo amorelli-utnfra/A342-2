@@ -29,7 +29,7 @@ export class AlumnosService {
   }
 
   async findOne(id: string) {
-    return this.alumnoModel.findById(id).exec();
+    return this.alumnoModel.findById(id).populate('materias').exec();
   }
 
   async update(id: string, updateAlumnoDto: UpdateAlumnoDto) {
